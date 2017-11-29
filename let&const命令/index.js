@@ -1,6 +1,46 @@
-let a = 1;
-let b = 2;
-let fn = () => {
-    console.log(a+b)
+/*
+* a.块级作用域，let和const声明的变量只在其声明的代码块里生效,var声明的变量只在其函数作用域中或者是全局变量
+* b.若let声明在循环条件中，则声明的变量只在循环体中有效,var声明的循环条件会在其所在的函数作用域作为局部变量或者在全局中作为全局变量
+* c.不存在变量提升，按着变量在声明语句后才使用的原则
+* d.在代码块内使用let命令声明变量之前，该变量都不可用，称之为暂时性死区，这样设计的目的主要是要大家养成良好的编程习惯
+* e.不允许在相同的作用域重复声明*/
+/*
+{
+    let a = 1;
+    var b = 2;
 }
-fn();
+console.log(b);
+console.log(a);
+*/
+/*
+for (let i = 0;i < 5 ;i++) {
+
+}
+console.log(i);*/
+
+/*var arr = [];
+for (var i = 0;i < 5;i++) {
+    arr[i] =  function () {
+        console.log(i);
+    }
+}
+arr[3]();*/
+/*
+
+var arr = [];
+for (let i = 0;i < 5;i++) {
+    arr[i] =  function () {
+        console.log(i);
+    }
+}
+arr[3]();*/
+
+
+/*console.log(foo);
+var foo = 1;
+let foo = 1;*/
+
+function bar (x = y, y = 2) {//函数默认用let声明
+    return [x,y]
+}
+bar()
