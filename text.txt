@@ -1,0 +1,7 @@
+1,简单介绍ECMAScript6.
+2,讲下环境对es6的支持程度，介绍下 ES-Checker工具。https://github.com/ruanyf/es-checker
+    npm install -g es-checker
+    切换node版本去执行es-checker 基本都不支持es6的模块化
+浏览器http://ruanyf.github.io/es-checker/index.cn.html
+3，局部安装babel或者webpack等工具的时候 需要到node_modules到bin中去使用命令。这时候可以安装npx htnpxtps://zhuanlan.zhihu.com/p/27840803 https://www.npmjs.com/package/npx
+npm 5.2以上npm就自带npx

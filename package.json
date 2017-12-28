@@ -4,7 +4,11 @@
   "description": "es6 study",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel index.js  -d lib",
+    "watchFile":"npx babel index.js --watch --out-file outIndex.js",
+    "sourceMap":"npx babel index.js --out-file outIndex2.js --source-maps",
+    "testEs6": "es-checker"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,16 @@
   "bugs": {
     "url": "https://github.com/zhouwei007/es6_note/issues"
   },
-  "homepage": "https://github.com/zhouwei007/es6_note#readme"
+  "homepage": "https://github.com/zhouwei007/es6_note#readme",
+  "dependencies": {
+    "es-checker": "^1.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0"
+  }
 }
