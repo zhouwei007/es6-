@@ -8,7 +8,9 @@
     "build": "babel index.js  -d lib",
     "watchFile":"npx babel index.js --watch --out-file outIndex.js",
     "sourceMap":"npx babel index.js --out-file outIndex2.js --source-maps",
-    "testEs6": "es-checker"
+    "testEs6": "es-checker",
+    "babelLet&const":"babel content/letConst/src --watch -d content/letConst/lib",
+    "babelFunction":"babel content/Function/src --watch -d content/Function/lib"
   },
   "repository": {
     "type": "git",
