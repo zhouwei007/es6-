@@ -6,22 +6,19 @@
 * c.不存在变量提升，按着变量在声明语句后才使用的原则
 * d.在代码块内使用let命令声明变量之前，该变量都不可用，称之为暂时性死区，这样设计的目的主要是要大家养成良好的编程习惯
 * e.不允许在相同的作用域重复声明*/
-/*
-{
+/*{
     let a = 1;
     var b = 2;
 }
 console.log(b);
-console.log(a);
-*/
+console.log(a);*/
 
 //b
-/*
-for (let i = 0;i < 5 ;i++) {
+/*for (let i = 0;i < 5 ;i++) {
 
 }
-console.log(i);*/
-/*var arr = [];
+console.log(i);
+var arr = [];
 for (var i = 0;i < 5;i++) {
     arr[i] =  function () {
         console.log(i);
@@ -56,9 +53,8 @@ for (let i = 0; i < 3; i++) {
 }
 */
 
-/*
 
-var arr = [];
+/*var arr = [];
 for (let i = 0;i < 5;i++) {
     arr[i] =  function () {
         console.log(i);
@@ -78,7 +74,7 @@ let foo = 1;*/
 /*注意typeof的使用，如果判断的变量是let声明的就可能不是100%的安全*/
 /*typeof x;
 let x;*/
-/*typeof dfdf;*/
+/*console.log(typeof dfdf)*/
 //比较隐藏的暂时性死区
 /*function bar (x = y, y = 2) {//函数默认用let声明
     return [x,y]

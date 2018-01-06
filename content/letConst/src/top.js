@@ -6,7 +6,7 @@
 - 无法在编译的时候就提示变量未声明的错误，只有运行的时候才能知道（因为全局变量可能是顶层对象属性动态创建出来的）
   - 程序员可能打错字创建全局变量
   - window对象有实体含义，指的是浏览器窗口对象。
-* es6改进 let const import global 创建的全局变量不是顶层对象属性
+* es6改进 let const import class 创建的全局变量不是顶层对象属性
 let b = 1;
 window.b //undefined 实际上报错 Identifier 'b' has already been declared *
 
