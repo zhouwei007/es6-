@@ -1,0 +1,84 @@
+{
+  "routerData": [
+    {
+      "code": "net-manage",
+      "subs": [
+        {
+          "code": "phoneNet",
+          "buttons": [
+
+          ],
+          "icon": "el-icon-document",
+          "index": "/phoneNet",
+          "title": "电话网络"
+        }
+      ],
+      "icon": "el-icon-menu",
+      "index": "/net-manage",
+      "title": "多维网络"
+    },
+    {
+      "code": "account-manage",
+      "subs": [
+        {
+          "code": "accountList",
+          "buttons": [
+            "启用",
+            "删除",
+            "禁用",
+            "加入到组"
+          ],
+          "icon": "el-icon-document",
+          "index": "/account/accountList",
+          "title": "用户列表"
+        },
+        {
+          "code": "organization_list",
+          "buttons": [
+            "查询",
+            "添加",
+            "加入到角色",
+            "编辑",
+            "管理用户"
+          ],
+          "icon": "el-icon-document",
+          "index": "/organization/organization_list",
+          "title": "组列表"
+        },
+        {
+          "code": "rolelist",
+          "buttons": [
+            "权限配置",
+            "编辑",
+            "管理组",
+            "查询",
+            "新建"
+          ],
+          "icon": "el-icon-document",
+          "index": "/role",
+          "title": "角色列表"
+        }
+      ],
+      "icon": "el-icon-menu",
+      "index": "/account-manage",
+      "title": "用户及权限管理"
+    },
+    {
+      "code": "system-manage",
+      "subs": [
+        {
+          "code": "composite",
+          "buttons": [
+
+          ],
+          "icon": "el-icon-document",
+          "index": "/composite",
+          "title": "菜单列表"
+        }
+      ],
+      "icon": "el-icon-menu",
+      "index": "/system-manage",
+      "title": "系统管理"
+    }
+  ]
+}
