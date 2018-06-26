@@ -70,7 +70,7 @@ myPromise().then(resolve => {
 });
 /*************5字符串模板***************/
 let str = 'xixida';
-console.log(`我是字符串模板:${str}`)
+console.log(`我是字符串模板:${str}`);
 /***************************/
 
 
@@ -196,6 +196,6 @@ function myObjectkey() {
         name:'zhouwei',
         age:'29'
     }
-    console.log('ObjectKey',Object.keys(obj))
+    console.log('ObjectKey',Object.keys(obj),typeof Object.keys(obj))
 }
 myObjectkey();

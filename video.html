@@ -2,14 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>颜色转化器</title>
+    <style>
+
+    </style>
 </head>
 <body>
-<video src="https://souyidai-test.ks3-cn-beijing.ksyun.com/risk/896b3f5863fc4db698c767a0442b2592.mov?AccessKeyId=AKLTSvPcPnJjR-edw5jFfW0I7w&Expires=1521184216&Signature=HK8mD2nxzPA7zEMImKi4GqyT7cs%3D" controls="controls" style="width: 30%;height: 30%;">
-    your browser does not support the video tag
-</video>
-<video src="https://souyidai-test.ks3-cn-beijing.ksyun.com/risk/896b3f5863fc4db698c767a0442b2592.mov?AccessKeyId=AKLTSvPcPnJjR-edw5jFfW0I7w&Expires=1521184216&Signature=HK8mD2nxzPA7zEMImKi4GqyT7cs%3Dtype=video/mp4" width="100%" height="calc(100% - 50px)" controls="controls" autoplay="autoplay" s>
-   】
-</video>
+    <button onclick="jump()">点击跳转</button>
 </body>
+<script>
+    function jump() {
+        setTimeout(function () {
+            window.open('http://www.baidu.com')
+        },1000)
+    }
+    setTimeout(function () {
+        openWin('http://www.baidu.com')
+    },1000)
+    function openWin(url) {
+        $('body').append($('<a href="'+url+'" target="_blank" id="openWin" style="display: none;"></a>'))
+        document.getElementById("openWin").click();//点击事件
+        $('#openWin').remove();
+    }
+</script>
 </html>

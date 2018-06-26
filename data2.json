@@ -1,0 +1,442 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "id": 81752,
+        "properties": {
+          "insertTime": 1509695646441,
+          "phone": "906378033094945234",
+          "idCard": "1371227632901",
+          "name": "v",
+          "isBorrower": true,
+          "timestamp": 1509696028362
+        },
+        "labels": "v"
+      }
+    ],
+    "relationships": [
+      {
+        "startNode": 81752,
+        "id": 66075,
+        "type": "3",
+        "endNode": "84981",
+        "properties": {
+          "insertTime": 1509696035115,
+          "phone": "1641177525776",
+          "loanIds": [
+            "2017544655089442179"
+          ],
+          "timestamp": 1509696035115
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 65915,
+        "type": "0",
+        "endNode": "84735",
+        "properties": {
+          "insertTime": 1509696015276,
+          "phone": "1691636422441",
+          "loanIds": [
+            "2017190545151044242"
+          ],
+          "timestamp": 1509696015276
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 65568,
+        "type": "1",
+        "endNode": "84506",
+        "properties": {
+          "insertTime": 1509695983224,
+          "phone": "1566115911868",
+          "loanIds": [
+            "2017109982855910749"
+          ],
+          "timestamp": 1509695983224
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 65445,
+        "type": "3",
+        "endNode": "84352",
+        "properties": {
+          "insertTime": 1509695966915,
+          "phone": "11074477452093",
+          "loanIds": [
+            "2017176545586835742"
+          ],
+          "timestamp": 1509695966915
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 65232,
+        "type": "2",
+        "endNode": "84266",
+        "properties": {
+          "insertTime": 1509695953175,
+          "phone": "1364184052186",
+          "loanIds": [
+            "2017185281957253161"
+          ],
+          "timestamp": 1509695953175
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 65293,
+        "type": "1",
+        "endNode": "84200",
+        "properties": {
+          "insertTime": 1509695940794,
+          "phone": "1344410241617",
+          "loanIds": [
+            "2017385985754852922"
+          ],
+          "timestamp": 1509695940794
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 65105,
+        "type": "0",
+        "endNode": "84016",
+        "properties": {
+          "insertTime": 1509695928020,
+          "phone": "1271393837062",
+          "loanIds": [
+            "2017340482869542974"
+          ],
+          "timestamp": 1509695928020
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 65047,
+        "type": "2",
+        "endNode": "83970",
+        "properties": {
+          "insertTime": 1509695911637,
+          "phone": "1463194614909",
+          "loanIds": [
+            "2017510152556757604"
+          ],
+          "timestamp": 1509695911637
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 64889,
+        "type": "3",
+        "endNode": "83754",
+        "properties": {
+          "insertTime": 1509695897246,
+          "phone": "1223322627444",
+          "loanIds": [
+            "2017383833667061495"
+          ],
+          "timestamp": 1509695897246
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 64731,
+        "type": "2",
+        "endNode": "83703",
+        "properties": {
+          "insertTime": 1509695886124,
+          "phone": "1813333024727",
+          "loanIds": [
+            "2017620032777433253"
+          ],
+          "timestamp": 1509695886124
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 64652,
+        "type": "3",
+        "endNode": "83556",
+        "properties": {
+          "insertTime": 1509695876820,
+          "phone": "1761252247615",
+          "loanIds": [
+            "2017522755197324871"
+          ],
+          "timestamp": 1509695876820
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 64592,
+        "type": "2",
+        "endNode": "83527",
+        "properties": {
+          "insertTime": 1509695863250,
+          "phone": "1633015236594",
+          "loanIds": [
+            "2017644373579646529"
+          ],
+          "timestamp": 1509695863250
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 64518,
+        "type": "2",
+        "endNode": "83484",
+        "properties": {
+          "insertTime": 1509695852123,
+          "phone": "1824747241141",
+          "loanIds": [
+            "2017373903852654036"
+          ],
+          "timestamp": 1509695852123
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 64411,
+        "type": "2",
+        "endNode": "83362",
+        "properties": {
+          "insertTime": 1509695840703,
+          "phone": "1445715545625",
+          "loanIds": [
+            "2017510693485162632"
+          ],
+          "timestamp": 1509695840703
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 64328,
+        "type": "2",
+        "endNode": "83233",
+        "properties": {
+          "insertTime": 1509695830561,
+          "phone": "11025447145194",
+          "loanIds": [
+            "2017112673162821373"
+          ],
+          "timestamp": 1509695830561
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 64229,
+        "type": "1",
+        "endNode": "83137",
+        "properties": {
+          "insertTime": 1509695822980,
+          "phone": "1944696537095",
+          "loanIds": [
+            "2017313881150546108"
+          ],
+          "timestamp": 1509695822980
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 64147,
+        "type": "0",
+        "endNode": "83138",
+        "properties": {
+          "insertTime": 1509695811078,
+          "phone": "1332928113949",
+          "loanIds": [
+            "2017274072926640497"
+          ],
+          "timestamp": 1509695811078
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 64114,
+        "type": "2",
+        "endNode": "83030",
+        "properties": {
+          "insertTime": 1509695800644,
+          "phone": "11086350038655",
+          "loanIds": [
+            "2017380143137716644"
+          ],
+          "timestamp": 1509695800644
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 63863,
+        "type": "1",
+        "endNode": "82944",
+        "properties": {
+          "insertTime": 1509695785643,
+          "phone": "1945141041828",
+          "loanIds": [
+            "2017468633295261345"
+          ],
+          "timestamp": 1509695785643
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 63918,
+        "type": "0",
+        "endNode": "82789",
+        "properties": {
+          "insertTime": 1509695770127,
+          "phone": "1334517622671",
+          "loanIds": [
+            "2017629782772134333"
+          ],
+          "timestamp": 1509695770127
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 63856,
+        "type": "3",
+        "endNode": "82740",
+        "properties": {
+          "insertTime": 1509695756057,
+          "phone": "1384553118584",
+          "loanIds": [
+            "2017407083730628175"
+          ],
+          "timestamp": 1509695756057
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 63685,
+        "type": "1",
+        "endNode": "82556",
+        "properties": {
+          "insertTime": 1509695743949,
+          "phone": "1815840625939",
+          "loanIds": [
+            "2017118452241863536"
+          ],
+          "timestamp": 1509695743949
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 63472,
+        "type": "3",
+        "endNode": "82466",
+        "properties": {
+          "insertTime": 1509695728848,
+          "phone": "1316004649274",
+          "loanIds": [
+            "2017307224635358438"
+          ],
+          "timestamp": 1509695728848
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 63539,
+        "type": "1",
+        "endNode": "82407",
+        "properties": {
+          "insertTime": 1509695720937,
+          "phone": "11024101431445",
+          "loanIds": [
+            "2017534014320513273"
+          ],
+          "timestamp": 1509695720937
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 63398,
+        "type": "1",
+        "endNode": "82135",
+        "properties": {
+          "insertTime": 1509695709857,
+          "phone": "1253415916305",
+          "loanIds": [
+            "2017410392336447023"
+          ],
+          "timestamp": 1509695709857
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 63373,
+        "type": "3",
+        "endNode": "82251",
+        "properties": {
+          "insertTime": 1509695699830,
+          "phone": "1826223421348",
+          "loanIds": [
+            "2017310991784563652"
+          ],
+          "timestamp": 1509695699830
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 63276,
+        "type": "1",
+        "endNode": "82035",
+        "properties": {
+          "insertTime": 1509695685902,
+          "phone": "1846253020388",
+          "loanIds": [
+            "2017103494370331782"
+          ],
+          "timestamp": 1509695685902
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 63107,
+        "type": "3",
+        "endNode": "81972",
+        "properties": {
+          "insertTime": 1509695676972,
+          "phone": "1271754052372",
+          "loanIds": [
+            "2017399181234043289"
+          ],
+          "timestamp": 1509695676972
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 63010,
+        "type": "3",
+        "endNode": "81915",
+        "properties": {
+          "insertTime": 1509695666948,
+          "phone": "1116111329416",
+          "loanIds": [
+            "2017252412913145300"
+          ],
+          "timestamp": 1509695666948
+        }
+      },
+      {
+        "startNode": 81752,
+        "id": 63023,
+        "type": "1",
+        "endNode": "81866",
+        "properties": {
+          "insertTime": 1509695650501,
+          "phone": "1891047318420",
+          "loanIds": [
+            "2017259164671410061"
+          ],
+          "timestamp": 1509695650501
+        }
+      }
+    ]
+  },
+  "returnCode": "0",
+  "returnMsg": "ok"
+}

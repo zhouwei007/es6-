@@ -31,7 +31,7 @@ let demoGenerator = demo();
 console.log(demoGenerator.next('呵呵'));
 console.log(demoGenerator.next('dd'));
 console.log(demoGenerator.next());console.log(demoGenerator.next());*/
-function* f() {
+/*function* f() {
     for(var i = 0; true; i++) {
         var reset = yield i;
         if(reset) { i = -1; }
@@ -39,8 +39,24 @@ function* f() {
 }
 
 var g = f();
-console.log(g.next(),g.next(),g.next(true) )
+console.log(g.next(),g.next(),g.next(true) )*/
  // { value: 0, done: false }
 // { value: 1, done: false }
  // { value: 0, done: false }
+
+/*
+let fetch = () => {
+    return {
+        msg:'heheda'
+    }
+};
+function *gen() {
+    let result = yield fetch();
+    console.log(result.msg)
+}
+var g = gen();
+var result = g.next();
+console.log(result)
+*/
+
 

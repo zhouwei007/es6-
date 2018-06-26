@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel index.js  -d lib",
-    "watchFile":"npx babel index.js --watch --out-file outIndex.js",
-    "sourceMap":"npx babel index.js --out-file outIndex2.js --source-maps",
+    "watchFile": "npx babel index.js --watch --out-file outIndex.js",
+    "sourceMap": "npx babel index.js --out-file outIndex2.js --source-maps",
     "testEs6": "es-checker",
-    "babelLet&const":"babel content/letConst/src --watch -d content/letConst/lib",
-    "babelFunction":"babel content/Function/src --watch -d content/Function/lib"
+    "babelLet&const": "babel content/letConst/src --watch -d content/letConst/lib",
+    "babelFunction": "babel content/Function/src --watch -d content/Function/lib"
   },
   "repository": {
     "type": "git",
@@ -23,13 +23,17 @@
   },
   "homepage": "https://github.com/zhouwei007/es6_note#readme",
   "dependencies": {
-    "es-checker": "^1.4.1"
+    "co": "^4.6.0",
+    "es-checker": "^1.4.1",
+    "thunkify": "^2.1.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0"
   }
