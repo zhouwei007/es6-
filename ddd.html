@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<body>
+<div id="app">
+    <div class="block">
+        <el-select v-model="pValue" placeholder="请选择"   @change="pChange">
+            <el-option
+                    v-for="item in options"
+                    :key="item.value"
+                    :label="item.label"
+                    :value="item.value">
+            </el-option>
+        </el-select>
+        <el-select v-model="cValue" multiple placeholder="请选择"  @change="cChange">
+            <el-option
+                    v-for="item in cOptions"
+                    :key="item.value"
+                    :label="item.label"
+                    :value="item.value">
+            </el-option>
+        </el-select>
+    </div>
+</div>
+<div>
+    <button id="btn">提交我</button>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                options: [
+                    {
+                        value: '22',
+                        label: '呵呵',
+                        children:[
+                            {
+                                value:1,
+                                label:'么么哒'
+                            },
+                            {
+                                value:2,
+                                label:'呵呵哒'
+                            }
+                        ]
+                    },
+                    {
+                        value: '33',
+                        label: '哈哈',
+                        children:[
+                            {
+                                value:3,
+                                label:'嘻嘻哒'
+                            },
+                            {
+                                value:4,
+                                label:'乐乐哒'
+                            }
+                        ]
+                    },
+                   ],
+                cOptions:[],
+                pValue: '',
+                cValue:''
+
+            };
+        },
+        methods: {
+            pChange() {
+                this.cOptions = this.options.find((item)=>{
+                    return item.value == this.pValue;
+                }).children
+            },
+            cChange(){// 提交请求
+                var params = {
+                    key1:this.pValue,
+                    key2:this.cValue
+                };
+                $.ajax({
+                    url: 'loan/exportExcel',
+                    type: 'post',
+                    data:  params,
+                    dataType: "json",
+                    success: function (data) { // 请求工作的
+
+                    },
+                })
+            }
+        }
+    })
+    $(function () {
+      $("#btn").click(function(){
+        $.ajax({
+          url: 'loan/exportExcel?id=3333',
+          type: 'get',
+          success: function (data) { // 请求工作的
+
+          },
+        })
+      })
+    })
+</script>
+</html>

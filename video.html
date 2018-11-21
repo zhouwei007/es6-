@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <title>颜色转化器</title>
     <style>
-
+        .parent{
+            width: 600px;
+            border: 1px solid red;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .child{
+            border: 1px solid gold;
+            flex:1;
+        }
     </style>
 </head>
 <body>
-    <button onclick="jump()">点击跳转</button>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
 </body>
 <script>
-    function jump() {
-        setTimeout(function () {
-            window.open('http://www.baidu.com')
-        },1000)
-    }
-    setTimeout(function () {
-        openWin('http://www.baidu.com')
-    },1000)
-    function openWin(url) {
-        $('body').append($('<a href="'+url+'" target="_blank" id="openWin" style="display: none;"></a>'))
-        document.getElementById("openWin").click();//点击事件
-        $('#openWin').remove();
-    }
+
 </script>
 </html>

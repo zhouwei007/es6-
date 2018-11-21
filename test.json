@@ -1,0 +1,12 @@
+[
+  {
+    "x": 0,
+    "y": 0,
+    "w": 8,
+    "h": 7,
+    "i": 1,
+    "options": "{\"template\":\"<el-table :data=\\\"tableData\\\" style=\\\"width: 100%\\\"><el-table-column v-for=\\\"col in tableOptions\\\" :prop=\\\"col.field\\\" :label=\\\"col.title\\\" fixed></el-table-column></el-table>\",\"created\":\"function () {\\r\\n                console.log('created')\\r\\n                axios.post(this.apiUrl).then(res => {\\r\\n                  this.tableData = res.data.lists\\r\\n                })\\r\\n              }\",\"data\":\"function() {\\r\\n                return {\\r\\n                  tableData: [],\\r\\n                  apiUrl,\\r\\n                  tableOptions\\r\\n                }\\r\\n              }\",\"_Ctor\":\"{\\\"0\\\":\\\"function(e){this._init(e)}\\\"}\"}",
+    "props": "{\"apiUrl\":\"http://rap2api.taobao.org/app/mock/95259/equipment/list\",\"tableOptions\":\"[\\\"{\\\\\\\"title\\\\\\\":\\\\\\\"设备名称\\\\\\\",\\\\\\\"field\\\\\\\":\\\\\\\"name\\\\\\\"}\\\",\\\"{\\\\\\\"title\\\\\\\":\\\\\\\"设备型号\\\\\\\",\\\\\\\"field\\\\\\\":\\\\\\\"type\\\\\\\"}\\\",\\\"{\\\\\\\"title\\\\\\\":\\\\\\\"设备价格\\\\\\\",\\\\\\\"field\\\\\\\":\\\\\\\"price\\\\\\\"}\\\",\\\"{\\\\\\\"title\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"field\\\\\\\":\\\\\\\"\\\\\\\"}\\\"]\"}",
+    "moved": false
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "reportCode": "userProfessionInfo",
+    "tableName": "userProfessionInfo",
+    "colName": "positionLevel", // 数据集字段
+    "refType": "1",// 关联方式
+    "refTable": "financeInfo",// 关联表名
+    "refCol": "creCardsMaxYear"// 关联字段
+  }
+]

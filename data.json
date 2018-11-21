@@ -1,26 +1,2827 @@
-
 {
-  "evaluationReport":{
-    "label":"寻值截屏",
-    "elementId":"evaluationReport",
-    "elementName":"elementName",
-    "pictureInfo":{
-      "picture":[
+  "data": [
+    {
+      "fieldName": "姓名",
+      "formKey": "userInfo",
+      "fieldNameCode": "userName",
+      "typeName": "单行文本",
+      "paramName": "姓名",
+      "type": "text"
+    },
+    {
+      "fieldName": "身份证号",
+      "formKey": "userInfo",
+      "fieldNameCode": "idCard",
+      "typeName": "单行文本",
+      "paramName": "身份证号码",
+      "type": "text"
+    },
+    {
+      "fieldName": "手机号",
+      "formKey": "userInfo",
+      "fieldNameCode": "mobile",
+      "typeName": "单行文本",
+      "paramName": "手机号",
+      "type": "text"
+    },
+    {
+      "fieldName": "学历",
+      "formKey": "userInfo",
+      "fieldNameCode": "educSign",
+      "typeName": "下拉框",
+      "paramName": "学历",
+      "type": "select",
+      "params": [
         {
-          "batchApplyId":"",
-          "fileType":"",
-          "fileUrl":"url",
-          "type":1,
-          "userId":""
+          "ckecked": false,
+          "code": "1",
+          "label": "初中及以下"
         },
         {
-          "batchApplyId":"",
-          "fileType":"",
-          "fileUrl":"url",
-          "type":1,
-          "userId":""
+          "ckecked": false,
+          "code": "2",
+          "label": "高中"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "中专"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "大专"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "高职"
+        },
+        {
+          "ckecked": false,
+          "code": "6",
+          "label": "本科"
+        },
+        {
+          "ckecked": false,
+          "code": "7",
+          "label": "硕士"
+        },
+        {
+          "ckecked": false,
+          "code": "8",
+          "label": "博士及以上"
         }
-      ]//已经上传的
+      ]
+    },
+    {
+      "fieldName": "婚姻状况",
+      "formKey": "userInfo",
+      "fieldNameCode": "marrSign",
+      "typeName": "下拉框",
+      "paramName": "婚姻状况",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "已婚"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "未婚"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "离异"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "丧偶"
+        },
+        {
+          "ckecked": false,
+          "code": "10",
+          "label": "离异(假)"
+        }
+      ]
+    },
+    {
+      "fieldName": "现居住地址",
+      "formKey": "userInfo",
+      "fieldNameCode": "liveLoc",
+      "typeName": "地址",
+      "paramName": "居住地址",
+      "type": "address"
+    },
+    {
+      "fieldName": "现居住地址年限",
+      "formKey": "userInfo",
+      "fieldNameCode": "liveLocYearSign",
+      "typeName": "下拉框",
+      "paramName": "现居住地址年限",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "6个月以下"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "6个月到1年"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "1-2年内"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "2-3年内"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "3-4年内"
+        },
+        {
+          "ckecked": false,
+          "code": "6",
+          "label": "4-5年内"
+        },
+        {
+          "ckecked": false,
+          "code": "7",
+          "label": "5年以上"
+        }
+      ]
+    },
+    {
+      "fieldName": "ID5认证",
+      "formKey": "userInfo",
+      "fieldNameCode": "isAuthId5",
+      "typeName": "单选",
+      "paramName": "是否ID5认证",
+      "type": "radio",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "通过"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "不通过"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "未认证"
+        }
+      ]
+    },
+    {
+      "fieldName": "年龄",
+      "formKey": "userInfo",
+      "fieldNameCode": "age",
+      "typeName": "单行文本",
+      "paramName": "年龄",
+      "type": "text"
+    },
+    {
+      "fieldName": "居住情况",
+      "formKey": "userInfo",
+      "fieldNameCode": "nowFamily",
+      "typeName": "下拉框",
+      "paramName": "居住情况",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "自置无按揭"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "自置有按揭"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "共有住宅"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "租用"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "亲属楼宇"
+        },
+        {
+          "ckecked": false,
+          "code": "6",
+          "label": "集体宿舍"
+        },
+        {
+          "ckecked": false,
+          "code": "7",
+          "label": "其他"
+        },
+        {
+          "ckecked": false,
+          "code": "8",
+          "label": "没有提供资料"
+        }
+      ]
+    },
+    {
+      "fieldName": "毕业学校",
+      "formKey": "userInfo",
+      "fieldNameCode": "gradSchool",
+      "typeName": "单行文本",
+      "paramName": "毕业院校",
+      "type": "text"
+    },
+    {
+      "fieldName": "户籍地址省",
+      "formKey": "userInfo",
+      "fieldNameCode": "familyProvinceName",
+      "typeName": "单行文本",
+      "paramName": "户籍地址(省)",
+      "type": "text"
+    },
+    {
+      "fieldName": "户籍地址市",
+      "formKey": "userInfo",
+      "fieldNameCode": "familyCityName",
+      "typeName": "单行文本",
+      "paramName": "户籍地址(市)",
+      "type": "text"
+    },
+    {
+      "fieldName": "户籍地址区",
+      "formKey": "userInfo",
+      "fieldNameCode": "familyAreaName",
+      "typeName": "单行文本",
+      "paramName": "户籍地址(区)",
+      "type": "text"
+    },
+    {
+      "fieldName": "户籍详细地址",
+      "formKey": "userInfo",
+      "fieldNameCode": "familyDetailAddress",
+      "typeName": "单行文本",
+      "paramName": "户籍地址(详细)",
+      "type": "text"
+    },
+    {
+      "fieldName": "户籍地址",
+      "formKey": "userInfo",
+      "fieldNameCode": "familyAddress",
+      "typeName": "地址",
+      "paramName": "户籍地址",
+      "type": "address"
+    },
+    {
+      "fieldName": "电子邮箱",
+      "formKey": "userInfo",
+      "fieldNameCode": "email",
+      "typeName": "单行文本",
+      "paramName": "电子邮箱",
+      "type": "text"
+    },
+    {
+      "fieldName": "居住地址省",
+      "formKey": "userInfo",
+      "fieldNameCode": "liveLocProvince",
+      "typeName": "单行文本",
+      "paramName": "居住地址省名",
+      "type": "text"
+    },
+    {
+      "fieldName": "居住地址区",
+      "formKey": "userInfo",
+      "fieldNameCode": "liveLocAreaName",
+      "typeName": "单行文本",
+      "paramName": "居住地址区名",
+      "type": "text"
+    },
+    {
+      "fieldName": "居住地址详细",
+      "formKey": "userInfo",
+      "fieldNameCode": "liveLocAddressDetail",
+      "typeName": "单行文本",
+      "paramName": "居住地址详细",
+      "type": "text"
+    },
+    {
+      "fieldName": "居住地址市",
+      "formKey": "userInfo",
+      "fieldNameCode": "liveLocCity",
+      "typeName": "单行文本",
+      "paramName": "居住地址市名",
+      "type": "text"
+    },
+    {
+      "fieldName": "性别",
+      "formKey": "userInfo",
+      "fieldNameCode": "sex",
+      "typeName": "下拉框",
+      "paramName": "性别",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "男"
+        },
+        {
+          "ckecked": false,
+          "code": "0",
+          "label": "女"
+        }
+      ]
+    },
+    {
+      "fieldName": "是否本地人",
+      "formKey": "userInfo",
+      "fieldNameCode": "islocal",
+      "typeName": "单选",
+      "paramName": "是否为本地人",
+      "type": "radio",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "0",
+          "label": "否"
+        },
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "是"
+        }
+      ]
+    },
+    {
+      "fieldName": "子女数目",
+      "formKey": "userInfo",
+      "fieldNameCode": "childNum",
+      "typeName": "单行文本",
+      "paramName": "子女数目",
+      "type": "text"
+    },
+    {
+      "fieldName": "供养人数",
+      "formKey": "userInfo",
+      "fieldNameCode": "supportNum",
+      "typeName": "单行文本",
+      "paramName": "供养人数",
+      "type": "text"
+    },
+    {
+      "fieldName": "姓名全拼",
+      "formKey": "userInfo",
+      "fieldNameCode": "fullName",
+      "typeName": "单行文本",
+      "paramName": "姓名全拼",
+      "type": "text"
+    },
+    {
+      "fieldName": "单位名称",
+      "formKey": "jobInfo",
+      "fieldNameCode": "companyName",
+      "typeName": "单行文本",
+      "paramName": "单位名称",
+      "type": "text"
+    },
+    {
+      "fieldName": "单位性质",
+      "formKey": "jobInfo",
+      "fieldNameCode": "companySign",
+      "typeName": "下拉框",
+      "paramName": "单位性质",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "政府机关"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "事业单位"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "国企"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "外企"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "合资"
+        },
+        {
+          "ckecked": false,
+          "code": "6",
+          "label": "民营"
+        },
+        {
+          "ckecked": false,
+          "code": "7",
+          "label": "私企"
+        },
+        {
+          "ckecked": false,
+          "code": "8",
+          "label": "个体"
+        },
+        {
+          "ckecked": false,
+          "code": "9",
+          "label": "企业"
+        }
+      ]
+    },
+    {
+      "fieldName": "职位级别",
+      "formKey": "jobInfo",
+      "fieldNameCode": "positionLevel",
+      "typeName": "下拉框",
+      "paramName": "职位级别",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "公务员"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "非公务员"
+        },
+        {
+          "ckecked": false,
+          "code": "11",
+          "label": "厅级及以上"
+        },
+        {
+          "ckecked": false,
+          "code": "12",
+          "label": "局级"
+        },
+        {
+          "ckecked": false,
+          "code": "13",
+          "label": "处级"
+        },
+        {
+          "ckecked": false,
+          "code": "14",
+          "label": "科级"
+        },
+        {
+          "ckecked": false,
+          "code": "15",
+          "label": "一般干部"
+        },
+        {
+          "ckecked": false,
+          "code": "21",
+          "label": "法人"
+        },
+        {
+          "ckecked": false,
+          "code": "22",
+          "label": "股东"
+        },
+        {
+          "ckecked": false,
+          "code": "23",
+          "label": "企业负责人"
+        },
+        {
+          "ckecked": false,
+          "code": "24",
+          "label": "高层管理人员"
+        },
+        {
+          "ckecked": false,
+          "code": "25",
+          "label": "中层管理干部"
+        },
+        {
+          "ckecked": false,
+          "code": "26",
+          "label": "一般管理人员"
+        },
+        {
+          "ckecked": false,
+          "code": "27",
+          "label": "一般正式员工"
+        },
+        {
+          "ckecked": false,
+          "code": "28",
+          "label": "派遣员工"
+        },
+        {
+          "ckecked": false,
+          "code": "99",
+          "label": "其他"
+        }
+      ]
+    },
+    {
+      "fieldName": "单位电话",
+      "formKey": "jobInfo",
+      "fieldNameCode": "companyTel",
+      "typeName": "单行文本",
+      "paramName": "单位电话",
+      "type": "text"
+    },
+    {
+      "fieldName": "单位地址",
+      "formKey": "jobInfo",
+      "fieldNameCode": "companyAddress",
+      "typeName": "地址",
+      "paramName": "单位地址",
+      "type": "address"
+    },
+    {
+      "fieldName": "企业邮箱",
+      "formKey": "jobInfo",
+      "fieldNameCode": "companyMail",
+      "typeName": "单行文本",
+      "paramName": "企业邮箱",
+      "type": "text"
+    },
+    {
+      "fieldName": "企业邮箱验证状态",
+      "formKey": "jobInfo",
+      "fieldNameCode": "mailStatus",
+      "typeName": "单选",
+      "paramName": "企业邮箱验证状态",
+      "type": "radio",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "0",
+          "label": "未验证"
+        },
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "已验证"
+        }
+      ]
+    },
+    {
+      "fieldName": "工作年限",
+      "formKey": "jobInfo",
+      "fieldNameCode": "workYear",
+      "typeName": "下拉框",
+      "paramName": "工作年限",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "6个月以下"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "6个月到1年"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "1-2年内"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "2-3年内"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "3-4年内"
+        },
+        {
+          "ckecked": false,
+          "code": "6",
+          "label": "4-5年内"
+        },
+        {
+          "ckecked": false,
+          "code": "7",
+          "label": "5年以上"
+        }
+      ]
+    },
+    {
+      "fieldName": "月收入",
+      "formKey": "jobInfo",
+      "fieldNameCode": "monthIncome",
+      "typeName": "单行文本",
+      "paramName": "月收入",
+      "type": "text"
+    },
+    {
+      "fieldName": "发薪日",
+      "formKey": "jobInfo",
+      "fieldNameCode": "payDay",
+      "typeName": "下拉框",
+      "paramName": "发薪日",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "1"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "2"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "3"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "4"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "5"
+        },
+        {
+          "ckecked": false,
+          "code": "6",
+          "label": "6"
+        },
+        {
+          "ckecked": false,
+          "code": "7",
+          "label": "7"
+        },
+        {
+          "ckecked": false,
+          "code": "8",
+          "label": "8"
+        },
+        {
+          "ckecked": false,
+          "code": "9",
+          "label": "9"
+        },
+        {
+          "ckecked": false,
+          "code": "10",
+          "label": "10"
+        },
+        {
+          "ckecked": false,
+          "code": "11",
+          "label": "11"
+        },
+        {
+          "ckecked": false,
+          "code": "12",
+          "label": "12"
+        },
+        {
+          "ckecked": false,
+          "code": "13",
+          "label": "13"
+        },
+        {
+          "ckecked": false,
+          "code": "14",
+          "label": "14"
+        },
+        {
+          "ckecked": false,
+          "code": "15",
+          "label": "15"
+        },
+        {
+          "ckecked": false,
+          "code": "16",
+          "label": "16"
+        },
+        {
+          "ckecked": false,
+          "code": "17",
+          "label": "17"
+        },
+        {
+          "ckecked": false,
+          "code": "18",
+          "label": "18"
+        },
+        {
+          "ckecked": false,
+          "code": "19",
+          "label": "19"
+        },
+        {
+          "ckecked": false,
+          "code": "20",
+          "label": "20"
+        },
+        {
+          "ckecked": false,
+          "code": "21",
+          "label": "21"
+        },
+        {
+          "ckecked": false,
+          "code": "22",
+          "label": "22"
+        },
+        {
+          "ckecked": false,
+          "code": "23",
+          "label": "23"
+        },
+        {
+          "ckecked": false,
+          "code": "24",
+          "label": "24"
+        },
+        {
+          "ckecked": false,
+          "code": "25",
+          "label": "25"
+        },
+        {
+          "ckecked": false,
+          "code": "26",
+          "label": "26"
+        },
+        {
+          "ckecked": false,
+          "code": "27",
+          "label": "27"
+        },
+        {
+          "ckecked": false,
+          "code": "28",
+          "label": "28"
+        },
+        {
+          "ckecked": false,
+          "code": "29",
+          "label": "29"
+        },
+        {
+          "ckecked": false,
+          "code": "30",
+          "label": "30"
+        },
+        {
+          "ckecked": false,
+          "code": "31",
+          "label": "31"
+        }
+      ]
+    },
+    {
+      "fieldName": "职业",
+      "formKey": "jobInfo",
+      "fieldNameCode": "jobType",
+      "typeName": "下拉框",
+      "paramName": "职业",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "工薪族"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "企业主"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "个体户"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "学生"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "自由职业"
+        },
+        {
+          "ckecked": false,
+          "code": "8",
+          "label": "其他"
+        },
+        {
+          "ckecked": false,
+          "code": "9",
+          "label": "无工作"
+        }
+      ]
+    },
+    {
+      "fieldName": "社保情况",
+      "formKey": "jobInfo",
+      "fieldNameCode": "socialSecurityStatus",
+      "typeName": "单选",
+      "paramName": "社保情况",
+      "type": "radio",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "有社保"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "无社保"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "未提供"
+        }
+      ]
+    },
+    {
+      "fieldName": "单位地址省",
+      "formKey": "jobInfo",
+      "fieldNameCode": "companyProvinceName",
+      "typeName": "单行文本",
+      "paramName": "单位地址（省名称）",
+      "type": "text"
+    },
+    {
+      "fieldName": "单位地址市",
+      "formKey": "jobInfo",
+      "fieldNameCode": "companyCityName",
+      "typeName": "单行文本",
+      "paramName": "单位地址（市名称）",
+      "type": "text"
+    },
+    {
+      "fieldName": "单位地址区",
+      "formKey": "jobInfo",
+      "fieldNameCode": "companyAreaName",
+      "typeName": "单行文本",
+      "paramName": "单位地址（区名称）",
+      "type": "text"
+    },
+    {
+      "fieldName": "单位详细地址",
+      "formKey": "jobInfo",
+      "fieldNameCode": "companyDetailAddress",
+      "typeName": "单行文本",
+      "paramName": "单位地址（详细地址）",
+      "type": "text"
+    },
+    {
+      "fieldName": "所属行业",
+      "formKey": "jobInfo",
+      "fieldNameCode": "industry",
+      "typeName": "下拉框",
+      "paramName": "所属行业",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "15",
+          "label": "农、林、牧、渔业"
+        },
+        {
+          "ckecked": false,
+          "code": "10",
+          "label": "采矿业"
+        },
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "制造业"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "文化、体育和娱乐业"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "批发和零售业"
+        },
+        {
+          "ckecked": false,
+          "code": "6",
+          "label": "教育"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "信息传输、软件和信息技术服务业"
+        },
+        {
+          "ckecked": false,
+          "code": "8",
+          "label": "交通运输、仓储和邮政业"
+        },
+        {
+          "ckecked": false,
+          "code": "9",
+          "label": "房地产业"
+        },
+        {
+          "ckecked": false,
+          "code": "7",
+          "label": "电力、热力、燃气及水生产和供应业"
+        },
+        {
+          "ckecked": false,
+          "code": "11",
+          "label": "金融业"
+        },
+        {
+          "ckecked": false,
+          "code": "12",
+          "label": "住宿和餐饮业"
+        },
+        {
+          "ckecked": false,
+          "code": "13",
+          "label": "卫生和社会工作"
+        },
+        {
+          "ckecked": false,
+          "code": "14",
+          "label": "建筑业"
+        },
+        {
+          "ckecked": false,
+          "code": "18",
+          "label": "公共管理、社会保障和社会组织"
+        },
+        {
+          "ckecked": false,
+          "code": "19",
+          "label": "租赁和商务服务业"
+        },
+        {
+          "ckecked": false,
+          "code": "20",
+          "label": "水利、环境和公共设施管理业"
+        },
+        {
+          "ckecked": false,
+          "code": "21",
+          "label": "科学研究和技术服务业"
+        },
+        {
+          "ckecked": false,
+          "code": "22",
+          "label": "居民服务、修理和其他服务业"
+        },
+        {
+          "ckecked": false,
+          "code": "23",
+          "label": "国际组织"
+        },
+        {
+          "ckecked": false,
+          "code": "99",
+          "label": "其他"
+        }
+      ]
+    },
+    {
+      "fieldName": "私营企业类型",
+      "formKey": "jobInfo",
+      "fieldNameCode": "selfComType",
+      "typeName": "下拉框",
+      "paramName": "私营企业类型",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "私营股份有限公司"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "私营有限责任公司"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "私营合作"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "私营独资"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "个体"
+        },
+        {
+          "ckecked": false,
+          "code": "6",
+          "label": "自雇专业人士"
+        },
+        {
+          "ckecked": false,
+          "code": "9",
+          "label": "其他"
+        }
+      ]
+    },
+    {
+      "fieldName": "企业经营年限",
+      "formKey": "jobInfo",
+      "fieldNameCode": "opTime",
+      "typeName": "下拉框",
+      "paramName": "企业实际经营年限",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "6个月以下"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "6个月~1年"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "1年~2年"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "2年~5年"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "5年以上"
+        }
+      ]
+    },
+    {
+      "fieldName": "所在部门",
+      "formKey": "jobInfo",
+      "fieldNameCode": "departments",
+      "typeName": "单行文本",
+      "paramName": "所在部门",
+      "type": "text"
+    },
+    {
+      "fieldName": "是否实际控股人",
+      "formKey": "jobInfo",
+      "fieldNameCode": "isActualController",
+      "typeName": "单选",
+      "paramName": "是否为实际控股人",
+      "type": "radio",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "0",
+          "label": "否"
+        },
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "是"
+        }
+      ]
+    },
+    {
+      "fieldName": "股份占比(%)",
+      "formKey": "jobInfo",
+      "fieldNameCode": "shareRatio",
+      "typeName": "单行文本",
+      "paramName": "股份占比(%)",
+      "type": "text"
+    },
+    {
+      "fieldName": "员工数量",
+      "formKey": "jobInfo",
+      "fieldNameCode": "employeesNum",
+      "typeName": "下拉框",
+      "paramName": "员工数量",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "10人以下"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "10~100人"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "100~500人"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "500人以上"
+        }
+      ]
+    },
+    {
+      "fieldName": "经营场所",
+      "formKey": "jobInfo",
+      "fieldNameCode": "bizPlace",
+      "typeName": "下拉框",
+      "paramName": "经营场所",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "租用"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "自有房产"
+        }
+      ]
+    },
+    {
+      "fieldName": "审核决策",
+      "formKey": "checkDecision",
+      "fieldNameCode": "t_variable_returnCode",
+      "typeName": "下拉框",
+      "paramName": "审核决策",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "0",
+          "label": "正常"
+        },
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "异常"
+        },
+        {
+          "ckecked": false,
+          "code": "R0000001",
+          "label": "通过"
+        },
+        {
+          "ckecked": false,
+          "code": "R0000002",
+          "label": "通过并结束"
+        },
+        {
+          "ckecked": false,
+          "code": "R0000003",
+          "label": "贷前通过"
+        },
+        {
+          "ckecked": false,
+          "code": "R0000004",
+          "label": "贷中通过"
+        },
+        {
+          "ckecked": false,
+          "code": "D0000001",
+          "label": "拒绝"
+        },
+        {
+          "ckecked": false,
+          "code": "D0000002",
+          "label": "放弃"
+        },
+        {
+          "ckecked": false,
+          "code": "Y0000001",
+          "label": "提交特批"
+        },
+        {
+          "ckecked": false,
+          "code": "Y0000002",
+          "label": "用户确认"
+        },
+        {
+          "ckecked": false,
+          "code": "Z0000001",
+          "label": "补充资料"
+        },
+        {
+          "ckecked": false,
+          "code": "P0000001",
+          "label": "提交反欺诈"
+        },
+        {
+          "ckecked": false,
+          "code": "P0000002",
+          "label": "提交质检"
+        },
+        {
+          "ckecked": false,
+          "code": "P0000003",
+          "label": "提交初审"
+        },
+        {
+          "ckecked": false,
+          "code": "P0000004",
+          "label": "提交终审"
+        },
+        {
+          "ckecked": false,
+          "code": "P0000005",
+          "label": "提交下户"
+        },
+        {
+          "ckecked": false,
+          "code": "P0000006",
+          "label": "提交稽核"
+        },
+        {
+          "ckecked": false,
+          "code": "P0000007",
+          "label": "提交终审复核"
+        },
+        {
+          "ckecked": false,
+          "code": "B0000001",
+          "label": "返回一步"
+        },
+        {
+          "ckecked": false,
+          "code": "B0000002",
+          "label": "返回二步"
+        },
+        {
+          "ckecked": false,
+          "code": "N0000001",
+          "label": "提示"
+        }
+      ]
+    },
+    {
+      "fieldName": "审核描述",
+      "formKey": "checkDecision",
+      "fieldNameCode": "t_variable_decision_desc",
+      "typeName": "文本域",
+      "paramName": "审核描述",
+      "type": "textarea"
+    },
+    {
+      "fieldName": "审批金额",
+      "formKey": "checkDecision",
+      "fieldNameCode": "audit_auditAmount",
+      "typeName": "单行文本",
+      "paramName": "审批表单审批金额",
+      "type": "text"
+    },
+    {
+      "fieldName": "审批期限",
+      "formKey": "checkDecision",
+      "fieldNameCode": "auditapprovalTerm",
+      "typeName": "单行文本",
+      "paramName": "审核表单审批期限",
+      "type": "text"
+    },
+    {
+      "fieldName": "期限单位",
+      "formKey": "checkDecision",
+      "fieldNameCode": "approvalBorrowPeriodUnit",
+      "typeName": "下拉框",
+      "paramName": "审批期限单位",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "月"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "日"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "年"
+        }
+      ]
+    },
+    {
+      "fieldName": "反馈客户",
+      "formKey": "checkDecision",
+      "fieldNameCode": "feedbackForm",
+      "typeName": "文本域",
+      "paramName": "反馈客户(表单)",
+      "type": "textarea"
+    },
+    {
+      "fieldName": "贷前原因",
+      "formKey": "checkDecision",
+      "fieldNameCode": "beforeLoanReason",
+      "typeName": "下拉框",
+      "paramName": "贷前原因",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "0",
+          "label": "通过"
+        },
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "身份证照片异常"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "身份证组合过其他名字"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "电核本人信息虚假"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "电核联系人信息虚假"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "电话无人接听"
+        },
+        {
+          "ckecked": false,
+          "code": "6",
+          "label": "直亲反对"
+        },
+        {
+          "ckecked": false,
+          "code": "7",
+          "label": "职业信息调查异常"
+        },
+        {
+          "ckecked": false,
+          "code": "8",
+          "label": "其他调查异常"
+        },
+        {
+          "ckecked": false,
+          "code": "9",
+          "label": "芝麻信用异常"
+        }
+      ]
+    },
+    {
+      "fieldName": "贷后原因",
+      "formKey": "checkDecision",
+      "fieldNameCode": "afterLoanReason",
+      "typeName": "下拉框",
+      "paramName": "贷后原因",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "失联"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "可联"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "中介"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "欺诈"
+        }
+      ]
+    },
+    {
+      "fieldName": "已有房产套数",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "houseNum",
+      "typeName": "单行文本",
+      "paramName": "已有房产套数",
+      "type": "text"
+    },
+    {
+      "fieldName": "房产类型",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "houseType",
+      "typeName": "复选框",
+      "paramName": "房产类型",
+      "type": "checkbox",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "商品房"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "公寓"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "商铺"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "写字楼"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "别墅"
+        },
+        {
+          "ckecked": false,
+          "code": "6",
+          "label": "商住两用房"
+        },
+        {
+          "ckecked": false,
+          "code": "7",
+          "label": "经济适用房"
+        },
+        {
+          "ckecked": false,
+          "code": "8",
+          "label": "拆迁安置房"
+        },
+        {
+          "ckecked": false,
+          "code": "10",
+          "label": "限价房"
+        },
+        {
+          "ckecked": false,
+          "code": "11",
+          "label": "房改房"
+        },
+        {
+          "ckecked": false,
+          "code": "9",
+          "label": "其他"
+        }
+      ]
+    },
+    {
+      "fieldName": "房产现状",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "houseStatus",
+      "typeName": "下拉框",
+      "paramName": "房产现状",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "自住"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "空置"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "出租"
+        }
+      ]
+    },
+    {
+      "fieldName": "房屋面积",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "houseArea",
+      "typeName": "单行文本",
+      "paramName": "房屋面积",
+      "type": "text"
+    },
+    {
+      "fieldName": "房产单价",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "unitPrice",
+      "typeName": "单行文本",
+      "paramName": "房产单价",
+      "type": "text"
+    },
+    {
+      "fieldName": "房产地址",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "mortgageHouseAddress",
+      "typeName": "地址",
+      "paramName": "抵押房产地址",
+      "type": "address"
+    },
+    {
+      "fieldName": "房产证编号",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "licenseNo",
+      "typeName": "单行文本",
+      "paramName": "房产证编号",
+      "type": "text"
+    },
+    {
+      "fieldName": "权属人姓名",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "ownerName",
+      "typeName": "单行文本",
+      "paramName": "权属人姓名",
+      "type": "text"
+    },
+    {
+      "fieldName": "权属人数量",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "ownerNum",
+      "typeName": "单行文本",
+      "paramName": "权属人数量",
+      "type": "text"
+    },
+    {
+      "fieldName": "房产权期限",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "propertyPeriod",
+      "typeName": "下拉框",
+      "paramName": "房屋产权期限",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "40",
+          "label": "40年"
+        },
+        {
+          "ckecked": false,
+          "code": "50",
+          "label": "50年"
+        },
+        {
+          "ckecked": false,
+          "code": "70",
+          "label": "70年"
+        }
+      ]
+    },
+    {
+      "fieldName": "小区名称",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "villageName",
+      "typeName": "单行文本",
+      "paramName": "小区名称",
+      "type": "text"
+    },
+    {
+      "fieldName": "房贷余额",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "mortgageBalance",
+      "typeName": "单行文本",
+      "paramName": "房贷余额",
+      "type": "text"
+    },
+    {
+      "fieldName": "购房时间",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "purchaseTime",
+      "typeName": "日期",
+      "paramName": "购房时间",
+      "type": "date"
+    },
+    {
+      "fieldName": "房产估值",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "valuation",
+      "typeName": "单行文本",
+      "paramName": "房产估值",
+      "type": "text"
+    },
+    {
+      "fieldName": "抵押权人",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "mortgage",
+      "typeName": "下拉框",
+      "paramName": "抵押权人",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "0",
+          "label": "请选择"
+        },
+        {
+          "ckecked": false,
+          "code": "lijiangbin",
+          "label": "李江彬（lijiangbin）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhangfengjiao",
+          "label": "张凤娇（zhangfengjiao）"
+        },
+        {
+          "ckecked": false,
+          "code": "xuhongzheng",
+          "label": "徐红郑（xuhongzheng）"
+        },
+        {
+          "ckecked": false,
+          "code": "1051127",
+          "label": "曹凤强（caofengqiang）"
+        },
+        {
+          "ckecked": false,
+          "code": "epengmei",
+          "label": "鄂鹏美（epengmei）"
+        },
+        {
+          "ckecked": false,
+          "code": "jiyufei",
+          "label": "纪宇飞（jiyufei）"
+        },
+        {
+          "ckecked": false,
+          "code": "songlan",
+          "label": "宋斓（songlan）"
+        },
+        {
+          "ckecked": false,
+          "code": "lvlinchao",
+          "label": "吕琳超（lvlinchao）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhangjiaxin",
+          "label": "章佳新（zhangjiaxin）"
+        },
+        {
+          "ckecked": false,
+          "code": "luchen",
+          "label": "卢辰（luchen）"
+        },
+        {
+          "ckecked": false,
+          "code": "heyong",
+          "label": "何勇（heyong）"
+        },
+        {
+          "ckecked": false,
+          "code": "gongan",
+          "label": "龚桉（gongan）"
+        },
+        {
+          "ckecked": false,
+          "code": "songyangyang",
+          "label": "宋阳阳（songyangyang）"
+        },
+        {
+          "ckecked": false,
+          "code": "yuzhao",
+          "label": "余钊（yuzhao）"
+        },
+        {
+          "ckecked": false,
+          "code": "liaoshiyi",
+          "label": "廖诗怡（liaoshiyi）"
+        },
+        {
+          "ckecked": false,
+          "code": "chenfei",
+          "label": "陈飞（chenfei）"
+        },
+        {
+          "ckecked": false,
+          "code": "chensonghong",
+          "label": "陈松虹（chensonghong）"
+        },
+        {
+          "ckecked": false,
+          "code": "jibo",
+          "label": "暨波（jibo）"
+        },
+        {
+          "ckecked": false,
+          "code": "xiehongwei",
+          "label": "谢宏伟（xiehongwei）"
+        },
+        {
+          "ckecked": false,
+          "code": "wangchunting",
+          "label": "王春婷（wangchunting）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhanglingling",
+          "label": "张玲玲（zhanglingling）"
+        },
+        {
+          "ckecked": false,
+          "code": "mengxiangan",
+          "label": "孟祥岸（mengxiangan）"
+        },
+        {
+          "ckecked": false,
+          "code": "liuyongbiao",
+          "label": "刘永彪（liuyongbiao）"
+        },
+        {
+          "ckecked": false,
+          "code": "jijinming",
+          "label": "纪金明（jijinming）"
+        },
+        {
+          "ckecked": false,
+          "code": "1052729",
+          "label": "高翔（gaoxiang）"
+        },
+        {
+          "ckecked": false,
+          "code": "lujunjiao",
+          "label": "卢俊姣（lujunjiao）"
+        },
+        {
+          "ckecked": false,
+          "code": "1021540",
+          "label": "胡旭（huxu）"
+        },
+        {
+          "ckecked": false,
+          "code": "lichenguang",
+          "label": "李晨光（lichenguang）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhoujiming",
+          "label": "周继明（zhoujiming）"
+        }
+      ]
+    },
+    {
+      "fieldName": "抵质押率(%)",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "mortgageRate",
+      "typeName": "单行文本",
+      "paramName": "抵质押率",
+      "type": "text"
+    },
+    {
+      "fieldName": "一抵剩余期限",
+      "formKey": "mortgageHouseInfo",
+      "fieldNameCode": "mortgageOnePerods",
+      "typeName": "单行文本",
+      "paramName": "一抵剩余期限 ",
+      "type": "text"
+    },
+    {
+      "fieldName": "申请表",
+      "formKey": "housePicture",
+      "fieldNameCode": "prodServAgreement",
+      "typeName": "图片",
+      "paramName": "产品申请表",
+      "type": "picture"
+    },
+    {
+      "fieldName": "征信授权书",
+      "formKey": "housePicture",
+      "fieldNameCode": "creditLetter",
+      "typeName": "图片",
+      "paramName": "征信授权书",
+      "type": "picture"
+    },
+    {
+      "fieldName": "原银行贷款合同",
+      "formKey": "housePicture",
+      "fieldNameCode": "bankLoanContract",
+      "typeName": "图片",
+      "paramName": "银行贷款合同",
+      "type": "picture"
+    },
+    {
+      "fieldName": "房产证",
+      "formKey": "housePicture",
+      "fieldNameCode": "propertyPic",
+      "typeName": "图片",
+      "paramName": "房产证照片",
+      "type": "picture"
+    },
+    {
+      "fieldName": "征信报告",
+      "formKey": "housePicture",
+      "fieldNameCode": "easyAuditReport",
+      "typeName": "图片",
+      "paramName": "征信报告",
+      "type": "picture"
+    },
+    {
+      "fieldName": "其他图片",
+      "formKey": "housePicture",
+      "fieldNameCode": "otherPic",
+      "typeName": "图片",
+      "paramName": "其他图片",
+      "type": "picture"
+    },
+    {
+      "fieldName": "档案识别号",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "warrantAssetsCode",
+      "typeName": "单行文本",
+      "paramName": "档案表单档案编码",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案ID",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "warrantId",
+      "typeName": "单行文本",
+      "paramName": "档案表单档案ID",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案份数",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "warrantNumber",
+      "typeName": "单行文本",
+      "paramName": "档案表单档案份数",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案类型",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "warrantType",
+      "typeName": "下拉框",
+      "paramName": "档案表单档案类型",
+      "type": "select"
+    },
+    {
+      "fieldName": "档案状态",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "warrantStatus",
+      "typeName": "下拉框",
+      "paramName": "档案表单档案状态",
+      "type": "select"
+    },
+    {
+      "fieldName": "档案保管地",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "warrantPlace",
+      "typeName": "单行文本",
+      "paramName": "档案表单档案保管地",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案归档",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "warrantArchive",
+      "typeName": "单行文本",
+      "paramName": "档案表单档案归档",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案图片",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "warrantFIleId",
+      "typeName": "图片",
+      "paramName": "档案表单图片",
+      "type": "picture"
+    },
+    {
+      "fieldName": "档案抵押权人",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "mortgageName",
+      "typeName": "下拉框",
+      "paramName": "档案表单抵押权人",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "0",
+          "label": "请选择"
+        },
+        {
+          "ckecked": false,
+          "code": "lijiangbin",
+          "label": "李江彬（lijiangbin）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhangfengjiao",
+          "label": "张凤娇（zhangfengjiao）"
+        },
+        {
+          "ckecked": false,
+          "code": "xuhongzheng",
+          "label": "徐红郑（xuhongzheng）"
+        },
+        {
+          "ckecked": false,
+          "code": "1051127",
+          "label": "曹凤强（caofengqiang）"
+        },
+        {
+          "ckecked": false,
+          "code": "epengmei",
+          "label": "鄂鹏美（epengmei）"
+        },
+        {
+          "ckecked": false,
+          "code": "jiyufei",
+          "label": "纪宇飞（jiyufei）"
+        },
+        {
+          "ckecked": false,
+          "code": "songlan",
+          "label": "宋斓（songlan）"
+        },
+        {
+          "ckecked": false,
+          "code": "lvlinchao",
+          "label": "吕琳超（lvlinchao）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhangjiaxin",
+          "label": "章佳新（zhangjiaxin）"
+        },
+        {
+          "ckecked": false,
+          "code": "luchen",
+          "label": "卢辰（luchen）"
+        },
+        {
+          "ckecked": false,
+          "code": "heyong",
+          "label": "何勇（heyong）"
+        },
+        {
+          "ckecked": false,
+          "code": "gongan",
+          "label": "龚桉（gongan）"
+        },
+        {
+          "ckecked": false,
+          "code": "songyangyang",
+          "label": "宋阳阳（songyangyang）"
+        },
+        {
+          "ckecked": false,
+          "code": "yuzhao",
+          "label": "余钊（yuzhao）"
+        },
+        {
+          "ckecked": false,
+          "code": "liaoshiyi",
+          "label": "廖诗怡（liaoshiyi）"
+        },
+        {
+          "ckecked": false,
+          "code": "chenfei",
+          "label": "陈飞（chenfei）"
+        },
+        {
+          "ckecked": false,
+          "code": "chensonghong",
+          "label": "陈松虹（chensonghong）"
+        },
+        {
+          "ckecked": false,
+          "code": "jibo",
+          "label": "暨波（jibo）"
+        },
+        {
+          "ckecked": false,
+          "code": "xiehongwei",
+          "label": "谢宏伟（xiehongwei）"
+        },
+        {
+          "ckecked": false,
+          "code": "wangchunting",
+          "label": "王春婷（wangchunting）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhanglingling",
+          "label": "张玲玲（zhanglingling）"
+        },
+        {
+          "ckecked": false,
+          "code": "mengxiangan",
+          "label": "孟祥岸（mengxiangan）"
+        },
+        {
+          "ckecked": false,
+          "code": "liuyongbiao",
+          "label": "刘永彪（liuyongbiao）"
+        },
+        {
+          "ckecked": false,
+          "code": "jijinming",
+          "label": "纪金明（jijinming）"
+        },
+        {
+          "ckecked": false,
+          "code": "1052729",
+          "label": "高翔（gaoxiang）"
+        },
+        {
+          "ckecked": false,
+          "code": "lujunjiao",
+          "label": "卢俊姣（lujunjiao）"
+        },
+        {
+          "ckecked": false,
+          "code": "1021540",
+          "label": "胡旭（huxu）"
+        },
+        {
+          "ckecked": false,
+          "code": "lichenguang",
+          "label": "李晨光（lichenguang）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhoujiming",
+          "label": "周继明（zhoujiming）"
+        }
+      ]
+    },
+    {
+      "fieldName": "档案公证委托人",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "notarialPrincipal",
+      "typeName": "下拉框",
+      "paramName": "档案表单公正委托人",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "0",
+          "label": "请选择"
+        },
+        {
+          "ckecked": false,
+          "code": "lijiangbin",
+          "label": "李江斌（lijiangbin）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhangfengjiao",
+          "label": "张凤娇（zhangfengjiao）"
+        },
+        {
+          "ckecked": false,
+          "code": "xuhongzheng",
+          "label": "徐红郑（xuhongzheng）"
+        },
+        {
+          "ckecked": false,
+          "code": "caofengqiang",
+          "label": "曹凤强（caofengqiang）"
+        },
+        {
+          "ckecked": false,
+          "code": "epengmei",
+          "label": "鄂鹏美（epengmei）"
+        },
+        {
+          "ckecked": false,
+          "code": "jiyufei",
+          "label": "纪宇飞（jiyufei）"
+        },
+        {
+          "ckecked": false,
+          "code": "songlan",
+          "label": "宋斓（songlan）"
+        },
+        {
+          "ckecked": false,
+          "code": "lvlinchao",
+          "label": "吕琳超（lvlinchao）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhangjiaxin",
+          "label": "章佳新（zhangjiaxin）"
+        },
+        {
+          "ckecked": false,
+          "code": "luchen",
+          "label": "卢辰（luchen）"
+        },
+        {
+          "ckecked": false,
+          "code": "heyong",
+          "label": "何勇（heyong）"
+        },
+        {
+          "ckecked": false,
+          "code": "gongan",
+          "label": "龚桉（gongan）"
+        },
+        {
+          "ckecked": false,
+          "code": "songyangyang",
+          "label": "宋阳阳（songyangyang）"
+        },
+        {
+          "ckecked": false,
+          "code": "yuzhao",
+          "label": "余钊（yuzhao）"
+        },
+        {
+          "ckecked": false,
+          "code": "liaoshiyi",
+          "label": "廖诗怡（liaoshiyi）"
+        },
+        {
+          "ckecked": false,
+          "code": "chenfei",
+          "label": "陈飞（chenfei）"
+        },
+        {
+          "ckecked": false,
+          "code": "chensonghong",
+          "label": "陈松虹（chensonghong）"
+        },
+        {
+          "ckecked": false,
+          "code": "jibo",
+          "label": "暨波（jibo）"
+        },
+        {
+          "ckecked": false,
+          "code": "xiehongwei",
+          "label": "谢宏伟（xiehongwei）"
+        },
+        {
+          "ckecked": false,
+          "code": "wangchunting",
+          "label": "王春婷（wangchunting）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhanglingling",
+          "label": "张玲玲（zhanglingling）"
+        },
+        {
+          "ckecked": false,
+          "code": "mengxiangan",
+          "label": "孟祥岸（mengxiangan）"
+        },
+        {
+          "ckecked": false,
+          "code": "liuyongbiao",
+          "label": "刘永彪（liuyongbiao）"
+        },
+        {
+          "ckecked": false,
+          "code": "jijinming",
+          "label": "纪金明（jijinming）"
+        },
+        {
+          "ckecked": false,
+          "code": "gaoxiang",
+          "label": "高翔（gaoxiang）"
+        },
+        {
+          "ckecked": false,
+          "code": "lujunjiao",
+          "label": "卢俊姣（lujunjiao）"
+        },
+        {
+          "ckecked": false,
+          "code": "huxu",
+          "label": "胡旭（huxu）"
+        },
+        {
+          "ckecked": false,
+          "code": "lichenguang",
+          "label": "李晨光（lichenguang）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhoujiming",
+          "label": "周继明（zhoujiming）"
+        }
+      ]
+    },
+    {
+      "fieldName": "档案公证类型",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "notarizationType",
+      "typeName": "下拉框",
+      "paramName": "档案表单公证类型",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "全委公证"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "强制公证"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "原件公证"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "转委公证"
+        }
+      ]
+    },
+    {
+      "fieldName": "进件编号",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "archiveLoanId",
+      "typeName": "单行文本",
+      "paramName": "档案表单进件编号",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案文档PDF",
+      "formKey": "warrantInfo",
+      "fieldNameCode": "warantFildI",
+      "typeName": "文件",
+      "paramName": "档案表单文档pdf",
+      "type": "file"
+    },
+    {
+      "fieldName": "进件编号",
+      "formKey": "IDFlagInfo",
+      "fieldNameCode": "idFlagLoanId",
+      "typeName": "未知类型",
+      "paramName": "标识表单标识进件ID",
+      "type": "label"
+    },
+    {
+      "fieldName": "申请ID",
+      "formKey": "IDFlagInfo",
+      "fieldNameCode": "IDFlagLoanIDeee",
+      "typeName": "未知类型",
+      "paramName": "标识表单申请ID",
+      "type": "label"
+    },
+    {
+      "fieldName": "入库ID",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "instorageRecord",
+      "typeName": "未知类型",
+      "paramName": "入库ID",
+      "type": "label"
+    },
+    {
+      "fieldName": "申请类型",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "instorageRequestType",
+      "typeName": "下拉框",
+      "paramName": "入库申请类型",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "入库"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "借出"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "归还"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "出库"
+        }
+      ]
+    },
+    {
+      "fieldName": "送出日期",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "instorageSendDate",
+      "typeName": "日期时间",
+      "paramName": "入库送出日期",
+      "type": "datetime"
+    },
+    {
+      "fieldName": "人员手机号",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "instorageBackUserMobile",
+      "typeName": "单行文本",
+      "paramName": "入库人员带回手机号",
+      "type": "text"
+    },
+    {
+      "fieldName": "快递单号",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "instorageExpressNo",
+      "typeName": "单行文本",
+      "paramName": "入库快递单号",
+      "type": "text"
+    },
+    {
+      "fieldName": "快递公司",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "instorageExpressCompany",
+      "typeName": "下拉框",
+      "paramName": "入库快递公司",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "顺丰"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "EMS"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "邮政包裹"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "百世汇通"
+        },
+        {
+          "ckecked": false,
+          "code": "5",
+          "label": "申通"
+        },
+        {
+          "ckecked": false,
+          "code": "6",
+          "label": "中通"
+        },
+        {
+          "ckecked": false,
+          "code": "7",
+          "label": "圆通"
+        },
+        {
+          "ckecked": false,
+          "code": "8",
+          "label": "国通"
+        },
+        {
+          "ckecked": false,
+          "code": "9",
+          "label": "韵达"
+        },
+        {
+          "ckecked": false,
+          "code": "10",
+          "label": "天天"
+        },
+        {
+          "ckecked": false,
+          "code": "11",
+          "label": "优速"
+        },
+        {
+          "ckecked": false,
+          "code": "12",
+          "label": "快捷"
+        },
+        {
+          "ckecked": false,
+          "code": "13",
+          "label": "全峰"
+        },
+        {
+          "ckecked": false,
+          "code": "14",
+          "label": "京东"
+        },
+        {
+          "ckecked": false,
+          "code": "15",
+          "label": "宅急送"
+        }
+      ]
+    },
+    {
+      "fieldName": "入库在途方式",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "instorageOnTheWayType",
+      "typeName": "下拉框",
+      "paramName": "入库在途方式",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "快递邮寄"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "人员带回"
+        }
+      ]
+    },
+    {
+      "fieldName": "联系电话",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "instorageMobile",
+      "typeName": "单行文本",
+      "paramName": "入库接收人联系电话",
+      "type": "text"
+    },
+    {
+      "fieldName": "接收人",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "instorageRecordReceivieUser",
+      "typeName": "单行文本",
+      "paramName": "入库接收人",
+      "type": "text"
+    },
+    {
+      "fieldName": "原因备注",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "instorageReasonMark",
+      "typeName": "文本域",
+      "paramName": "入库原因备注",
+      "type": "textarea"
+    },
+    {
+      "fieldName": "申请入库人",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "instorageRecordRequestUser",
+      "typeName": "单行文本",
+      "paramName": "入库申请人",
+      "type": "text"
+    },
+    {
+      "fieldName": "接收地址",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "instorageRecordAddress",
+      "typeName": "单行文本",
+      "paramName": "入库接收地址",
+      "type": "text"
+    },
+    {
+      "fieldName": "人员带回姓名",
+      "formKey": "instorageInfo",
+      "fieldNameCode": "rkuBascKuser",
+      "typeName": "单行文本",
+      "paramName": "入库人员带回姓名",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案ID",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "warrantId4SameMid",
+      "typeName": "单行文本",
+      "paramName": "同MID档案表单的申请id",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案文档PDF",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "warantFildI",
+      "typeName": "文件",
+      "paramName": "档案表单文档pdf",
+      "type": "file"
+    },
+    {
+      "fieldName": "档案公证委托人",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "notarialPrincipal",
+      "typeName": "下拉框",
+      "paramName": "档案表单公正委托人",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "0",
+          "label": "请选择"
+        },
+        {
+          "ckecked": false,
+          "code": "lijiangbin",
+          "label": "李江斌（lijiangbin）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhangfengjiao",
+          "label": "张凤娇（zhangfengjiao）"
+        },
+        {
+          "ckecked": false,
+          "code": "xuhongzheng",
+          "label": "徐红郑（xuhongzheng）"
+        },
+        {
+          "ckecked": false,
+          "code": "caofengqiang",
+          "label": "曹凤强（caofengqiang）"
+        },
+        {
+          "ckecked": false,
+          "code": "epengmei",
+          "label": "鄂鹏美（epengmei）"
+        },
+        {
+          "ckecked": false,
+          "code": "jiyufei",
+          "label": "纪宇飞（jiyufei）"
+        },
+        {
+          "ckecked": false,
+          "code": "songlan",
+          "label": "宋斓（songlan）"
+        },
+        {
+          "ckecked": false,
+          "code": "lvlinchao",
+          "label": "吕琳超（lvlinchao）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhangjiaxin",
+          "label": "章佳新（zhangjiaxin）"
+        },
+        {
+          "ckecked": false,
+          "code": "luchen",
+          "label": "卢辰（luchen）"
+        },
+        {
+          "ckecked": false,
+          "code": "heyong",
+          "label": "何勇（heyong）"
+        },
+        {
+          "ckecked": false,
+          "code": "gongan",
+          "label": "龚桉（gongan）"
+        },
+        {
+          "ckecked": false,
+          "code": "songyangyang",
+          "label": "宋阳阳（songyangyang）"
+        },
+        {
+          "ckecked": false,
+          "code": "yuzhao",
+          "label": "余钊（yuzhao）"
+        },
+        {
+          "ckecked": false,
+          "code": "liaoshiyi",
+          "label": "廖诗怡（liaoshiyi）"
+        },
+        {
+          "ckecked": false,
+          "code": "chenfei",
+          "label": "陈飞（chenfei）"
+        },
+        {
+          "ckecked": false,
+          "code": "chensonghong",
+          "label": "陈松虹（chensonghong）"
+        },
+        {
+          "ckecked": false,
+          "code": "jibo",
+          "label": "暨波（jibo）"
+        },
+        {
+          "ckecked": false,
+          "code": "xiehongwei",
+          "label": "谢宏伟（xiehongwei）"
+        },
+        {
+          "ckecked": false,
+          "code": "wangchunting",
+          "label": "王春婷（wangchunting）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhanglingling",
+          "label": "张玲玲（zhanglingling）"
+        },
+        {
+          "ckecked": false,
+          "code": "mengxiangan",
+          "label": "孟祥岸（mengxiangan）"
+        },
+        {
+          "ckecked": false,
+          "code": "liuyongbiao",
+          "label": "刘永彪（liuyongbiao）"
+        },
+        {
+          "ckecked": false,
+          "code": "jijinming",
+          "label": "纪金明（jijinming）"
+        },
+        {
+          "ckecked": false,
+          "code": "gaoxiang",
+          "label": "高翔（gaoxiang）"
+        },
+        {
+          "ckecked": false,
+          "code": "lujunjiao",
+          "label": "卢俊姣（lujunjiao）"
+        },
+        {
+          "ckecked": false,
+          "code": "huxu",
+          "label": "胡旭（huxu）"
+        },
+        {
+          "ckecked": false,
+          "code": "lichenguang",
+          "label": "李晨光（lichenguang）"
+        },
+        {
+          "ckecked": false,
+          "code": "zhoujiming",
+          "label": "周继明（zhoujiming）"
+        }
+      ]
+    },
+    {
+      "fieldName": "档案公证类型",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "notarizationType",
+      "typeName": "下拉框",
+      "paramName": "档案表单公证类型",
+      "type": "select",
+      "params": [
+        {
+          "ckecked": false,
+          "code": "1",
+          "label": "全委公证"
+        },
+        {
+          "ckecked": false,
+          "code": "2",
+          "label": "强制公证"
+        },
+        {
+          "ckecked": false,
+          "code": "3",
+          "label": "原件公证"
+        },
+        {
+          "ckecked": false,
+          "code": "4",
+          "label": "转委公证"
+        }
+      ]
+    },
+    {
+      "fieldName": "进件编号",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "archiveLoanId",
+      "typeName": "单行文本",
+      "paramName": "档案表单进件编号",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案份数",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "warrantNumber",
+      "typeName": "单行文本",
+      "paramName": "档案表单档案份数",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案类型",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "warrantType",
+      "typeName": "下拉框",
+      "paramName": "档案表单档案类型",
+      "type": "select"
+    },
+    {
+      "fieldName": "档案状态",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "warrantStatus",
+      "typeName": "下拉框",
+      "paramName": "档案表单档案状态",
+      "type": "select"
+    },
+    {
+      "fieldName": "档案识别号",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "warrantAssetsCode",
+      "typeName": "单行文本",
+      "paramName": "档案表单档案编码",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案保管地",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "warrantPlace",
+      "typeName": "单行文本",
+      "paramName": "档案表单档案保管地",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案归档",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "warrantArchive",
+      "typeName": "单行文本",
+      "paramName": "档案表单档案归档",
+      "type": "text"
+    },
+    {
+      "fieldName": "档案图片",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "warrantFIleId",
+      "typeName": "图片",
+      "paramName": "档案表单图片",
+      "type": "picture"
+    },
+    {
+      "fieldName": "档案抵押权人",
+      "formKey": "mIdWarrantInfo",
+      "fieldNameCode": "mortgageName",
+      "typeName": "下拉框",
+      "paramName": "档案表单抵押权人",
+      "type": "select"
     }
-  }
+  ]
 }

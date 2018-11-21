@@ -1,0 +1,349 @@
+{
+
+
+  "ruleName": "测试自动分单",
+
+
+  "ruleCode": "", // 修改的时候需要传
+
+
+  "des": "测试自动分单",
+
+
+  "id": "",// 修改的时候需要传
+
+
+  "note": "测试自动分单",
+
+
+  "checkRadioStatus": "true",
+
+
+  "conditionsContent": [
+
+
+    {
+
+
+      "select_if": "if",
+
+
+      "fns": [
+
+
+        {
+
+
+          "ref_plugin": "",
+
+
+          "plugin_start": "(",
+
+
+          "buss_type": "bizCodeNew",
+
+
+          "con_plugin": "==",
+
+
+          "column_value": "10000017",
+
+
+          "plugin_end": "",
+
+
+          "items": [
+
+
+
+
+
+          ],
+
+
+          "isSelect": "false"
+
+
+        },
+
+
+        {
+
+
+          "ref_plugin": "||",
+
+
+          "plugin_start": "",
+
+
+          "buss_type": "bizCodeNew",
+
+
+          "con_plugin": "==",
+
+
+          "column_value": "10000009",
+
+
+          "plugin_end": ")",
+
+
+          "items": [
+
+
+
+
+
+          ],
+
+
+          "isSelect": "false"
+
+
+        },
+
+
+        {
+
+
+          "ref_plugin": "&&",
+
+
+          "plugin_start": "(",
+
+
+          "buss_type": "middleStatusNew",
+
+
+          "con_plugin": "==",
+
+
+          "column_value": "13",
+
+
+          "plugin_end": ")",
+
+
+          "items": [
+
+
+
+
+
+          ],
+
+
+          "isSelect": "false"
+
+
+        }
+
+
+      ],
+
+
+      "result": {
+
+
+        "autoAssign": {
+
+
+          "config": {
+
+
+            "timeConditionType": "1",
+
+
+            "timeConditionTypeName": "当前",
+
+
+            "bizCodeCondition": "1",
+
+
+            "bizCodeConditionName": "所有业务",
+
+
+            "wfNodeIdCondition": "1",
+
+
+            "wfNodeIdConditionName": "所有节点",
+
+
+            "taskCountCondition": "1",
+
+
+            "taskCountConditionName": "待办任务数",
+
+
+            "countCondition": "1",
+
+
+            "countConditionName": "最少",
+
+
+            "countConditionValue": "",
+
+
+            "daysCondition": "",
+
+
+            "unitCondition": "",
+
+
+            "unitConditionName": ""
+
+
+          },
+
+
+          "development": {
+
+
+            "refRuleCode": ""
+
+
+          },
+
+
+          "type": "0"
+
+
+        }
+
+
+      }
+
+
+    },
+
+
+    {
+
+
+      "select_if": "if",
+
+
+      "fns": [
+
+
+        {
+
+
+          "ref_plugin": "",
+
+
+          "plugin_start": "(",
+
+
+          "buss_type": "bizCodeNew",
+
+
+          "con_plugin": "==",
+
+
+          "column_value": "10000010",
+
+
+          "plugin_end": ")",
+
+
+          "items": [
+
+
+
+
+
+          ],
+
+
+          "isSelect": "false"
+
+
+        }
+
+
+      ],
+
+
+      "result": {
+
+
+        "autoAssign": {
+
+
+          "config": {
+
+
+            "timeConditionType": "1",
+
+
+            "timeConditionTypeName": "当前",
+
+
+            "bizCodeCondition": "1",
+
+
+            "bizCodeConditionName": "所有业务",
+
+
+            "wfNodeIdCondition": "1",
+
+
+            "wfNodeIdConditionName": "所有节点",
+
+
+            "taskCountCondition": "1",
+
+
+            "taskCountConditionName": "待办任务数",
+
+
+            "countCondition": "1",
+
+
+            "countConditionName": "最少",
+
+
+            "countConditionValue": "",
+
+
+            "daysCondition": "",
+
+
+            "unitCondition": "",
+
+
+            "unitConditionName": ""
+
+
+          },
+
+
+          "development": {
+
+
+            "refRuleCode": "ATG020002"
+
+
+          },
+
+
+          "type": "1"
+
+
+        }
+
+
+      }
+
+
+    }
+
+
+  ],
+
+
+  "note": ""
+
+
+}
